@@ -10,3 +10,11 @@ function calculateIMC (kilograms, height) {
     return (kilograms / (height * height))
 }
 
+const form = document.querySelector('form')
+form.addEventListener('submit', event => {
+    event.preventDefault()
+    
+    var result = calculateIMC(weight, height)
+    alert('Calculo IMC', result)
+
+})
