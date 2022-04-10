@@ -1,26 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>IMC Web</title>
 
-    <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-    <h1>IMC Web</h1>
-    
-    <form>
-        <label>Altura</label>
-        <input type="number" name="height" id="height" step="0.1" min="1" required />
-        
-        <label>Peso</label>
-        <input type="number" name="weight" id="weight" step="0.1" min="1" required />
-        <button type="submit">Calcular</button>
-    </form>
-    
-    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 class="h1">IMC Web</h1>
+      <p class="description">
+        Vamos verificar como está seu Índice de Massa Corpórea
+      </p>
+
+      <form class="form">
+        <div class="input-group">
+          <label for="height" class="input-group__label">Altura</label>
+          <input
+            type="number"
+            class="input-group__input"
+            name="height"
+            id="height"
+            step="0.01"
+            placeholder="Ex: 1.71"
+            min="1"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="weight" class="input-group__label">Peso</label>
+          <input
+            type="number"
+            class="input-group__input"
+            name="weight"
+            id="weight"
+            step="0.01"
+            placeholder="Ex: 72.5"
+            min="1"
+            required
+          />
+        </div>
+
+        <button type="submit" class="button">Calcular IMC</button>
+      </form>
+    </main>
+
+    <script src="js/script.js"></script>
     <h5>Filipe fantastico passou por aqui</h5>
-</body>
+  </body>
 </html>
